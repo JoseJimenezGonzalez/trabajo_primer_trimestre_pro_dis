@@ -208,7 +208,7 @@ class MainActivity3 : AppCompatActivity() {
         operacionFutura = generarOperacion()
 
         if(operacionActual == "No se han escogido operaciones"){
-            binding.tvCuentaActual.text = "No hay operación"
+            binding.tvCuentaActual.text = "Easter Egg"
             binding.tvCuentaAnterior.visibility = View.GONE
             binding.tvCuentaSiguiente.visibility = View.GONE
         }else{

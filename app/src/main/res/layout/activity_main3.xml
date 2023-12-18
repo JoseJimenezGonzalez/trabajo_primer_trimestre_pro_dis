@@ -54,77 +54,104 @@
         android:textSize="22sp">
     </TextView>
 
-    <TextView
-        android:id="@+id/tvCuentaAnterior"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCuentaAnterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvFalladas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ivCheck"
-        android:layout_margin="26dp"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:text="Cuenta anterior">
-    </TextView>
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp">
+        <TextView
+            android:id="@+id/tvCuentaAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="Cuenta anterior">
+        </TextView>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/ivCheck"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="@id/tvCuentaAnterior"
-        app:layout_constraintBottom_toBottomOf="@id/tvCuentaAnterior"
+        app:layout_constraintTop_toTopOf="@id/cvCuentaAnterior"
+        app:layout_constraintBottom_toBottomOf="@id/cvCuentaAnterior"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tvCuentaAnterior"
+        app:layout_constraintStart_toEndOf="@id/cvCuentaAnterior"
         android:visibility="gone">
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tvCuentaActual"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCuentaActual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvCuentaAnterior"
+        app:layout_constraintTop_toBottomOf="@id/cvCuentaAnterior"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/edtEntradaUsuario"
-        android:layout_marginTop="52dp"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:text="Cuenta actual">
-    </TextView>
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp">
+        <TextView
+            android:id="@+id/tvCuentaActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="Cuenta actual">
+        </TextView>
+    </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tvCuentaSiguiente"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCuentaSiguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvCuentaActual"
+        app:layout_constraintTop_toBottomOf="@id/cvCuentaActual"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="52dp"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:text="Cuenta futura">
-    </TextView>
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp">
+        <TextView
+            android:id="@+id/tvCuentaSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="Cuenta futura">
+        </TextView>
+    </androidx.cardview.widget.CardView>
 
 
 
-    <EditText
-        android:id="@+id/edtEntradaUsuario"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEntradaUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Resultado"
-        android:padding="12dp"
-        app:layout_constraintStart_toEndOf="@id/tvCuentaActual"
-        app:layout_constraintTop_toTopOf="@id/tvCuentaActual"
-        app:layout_constraintBottom_toBottomOf="@id/tvCuentaActual"
+        app:layout_constraintStart_toEndOf="@id/cvCuentaActual"
+        app:layout_constraintTop_toTopOf="@id/cvCuentaActual"
+        app:layout_constraintBottom_toBottomOf="@id/cvCuentaActual"
         app:layout_constraintEnd_toEndOf="parent"
-        android:inputType="none"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:background="@color/white"/>
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp">
+        <EditText
+            android:id="@+id/edtEntradaUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Resultado"
+            android:padding="12dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/white"/>
+    </androidx.cardview.widget.CardView>
 
     <GridLayout
         android:id="@+id/gridLayout"
